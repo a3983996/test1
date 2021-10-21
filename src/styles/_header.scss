@@ -1,0 +1,250 @@
+header{
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFFAB 44%, #FFFFFF0F 89%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding:0 1% 0 3.5%;
+    z-index: 1000;
+    // box-shadow: 4px 6px 16px #0000004D;
+    
+    .logo{
+        min-width: 250px;
+        width: 10%;
+        h1{
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            background:url('../img/logoB.png');
+            background-repeat: no-repeat;
+            height: 93px;
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 90%;
+    }
+    ul{
+        
+        display: flex;
+        justify-content: center;
+        li{
+            margin:0 0.5rem;
+            a{
+                display: block;
+                padding: 1rem;
+                font-weight:600;
+                white-space: nowrap;
+                font-size: 1.2rem;
+                border-bottom: 3px solid rgba(0,0,0,0);
+            }
+            .active{
+                color: #F5B916;
+                border-bottom: 3px solid #F5B916;
+            }
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .cross{
+            display: none;
+        }
+        .container1{
+            display: flex;
+            justify-content: space-around;
+            padding:1rem 0;
+            white-space: nowrap;
+            
+            .loginReg{
+                margin-right: 2rem;
+                display: flex;
+                align-items: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        padding-right: 0.5rem;
+                    }
+                }
+                .login{
+                    margin:0 0.5rem;
+                }
+                .regist{
+                    margin:0 0.5rem;
+                }
+            }
+            .user{
+                margin-right: 2rem;
+                display: flex;
+                align-items: center;
+                img{
+                    padding-right: 0.5rem;   
+                }
+            }
+            .fanPages{
+                display: flex;
+                align-items: center;
+                img{
+                    padding-left:1.2rem;
+                }
+            }
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 0.5rem;
+            width: 80%;
+            img{
+                position: absolute;
+                left: 0.8rem;
+            }
+            input{
+                outline: none;
+                border:1px solid #ABABAB;
+                border-radius: 5px;
+                height: 2.2rem;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                width: 100%;
+            }
+            button{
+                border:none;
+                background-color: white;
+                position: absolute;
+                right: 0;
+                color:#9A9A9A;
+                margin-right: 0.5rem;
+                cursor: pointer;
+                font-size: 0.8rem;
+            }
+        }
+        
+        i{
+            color: #7C9E6E;
+            font-size: 1rem;
+        }
+    }
+    .list{
+        display: none;
+    }
+    
+    .top{
+        position: fixed;
+        right: 5%;
+        top:90%;
+        border-radius: 10px;
+        width: 55px;
+        height: 55px;
+        border:none;
+        background-color: #F5B916 ;
+        color: white;
+        cursor: pointer;
+    }
+}
+.white{
+        background-color: white;
+}
+@media (max-width:1499px) {
+    header{
+        // position: relative;
+        .list{
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            transition: .3s;
+
+        }
+        .container{
+            transition: .3s;
+            background-color: rgba($color: #FFFFFF, $alpha: 0.9);
+            box-shadow: 0px 3px 10px #00000029;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+            max-width: 0px;
+            align-items: center;
+            .cross{
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+            .container1{
+                flex-direction: column;
+                align-items: center;
+                .loginReg{
+                    margin:1rem 0;
+                    padding: 0;
+                    
+                }
+                .user{
+                    margin:1rem 0;
+                    padding: 0;
+                }
+                .fanPages{
+                    margin: 0;
+                    padding: 0;
+                    img{
+                        padding: 1rem;
+                    }
+                }
+            }
+            .search{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .open{
+            max-width: 500px;
+
+        }
+        
+    }
+}
+@media (max-width:1099px) {
+    header{
+        nav{
+            transition: .3s;
+            background-color: rgba($color: #FFFFFF, $alpha: 0.9);
+            box-shadow: 0px 3px 10px #00000029;
+            position: absolute;
+            right: 0;
+            top: 0;
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+            max-width: 0px;
+            overflow: hidden;
+            
+            ul{
+                flex-direction: column;
+                margin-top: 2rem;
+            }
+            .container{
+                position: static;
+                background-color: rgba($color: #FFFFFF, $alpha: 0);
+                box-shadow:none;
+                
+            }
+        }
+        .open{
+            max-width: 500px;
+
+        }
+    }
+    
+}

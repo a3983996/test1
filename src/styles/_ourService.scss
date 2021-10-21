@@ -1,0 +1,170 @@
+.ourService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin: 3% 0;
+        position: relative;
+        &::after{
+            content: "";
+            background-color:  #F5B916;
+            position: absolute;
+            top: 50%;
+            left: 120%;
+            width: 80px;
+            height: 2px;
+        }
+        &::before{
+            content: "";
+            background-color:  #7C9E6E;
+            position: absolute;
+            top: 50%;
+            right: 120%;
+            width: 80px;
+            height: 2px;
+        }
+    }
+    .services{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex:1 1 220px;
+            
+            img{
+                border-radius: 50%;
+                margin-bottom: 3rem;
+                width: 80%;
+            }
+            button{
+                background-color: #7C9E6E ;
+                color: white;
+                width: 35%;
+                font-size: 1.5rem;
+                border:none;
+            }
+        }
+
+    }
+
+}
+.ourWorth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding-bottom: 25rem;
+    h2{
+        margin: 3% 0;
+        position: relative;
+        &::after{
+            content: "";
+            background-color:  #7C9E6E;
+            position: absolute;
+            top: 50%;
+            left: 150%;
+            width: 80px;
+            height: 2px;
+        }
+        &::before{
+            content: "";
+            background-color:  #7C9E6E;
+            position: absolute;
+            top: 50%;
+            right: 150%;
+            width: 80px;
+            height: 2px;
+        }
+    }
+    .worths{
+        position: relative;
+        .center{
+            box-shadow: 0px 3px 10px #00000029;
+            border-radius: 50%;
+            
+        }
+        .item{
+            box-shadow: 0px 3px 10px #00000029;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            
+            img{
+                width: 40%;
+                height: 40%;
+                margin-bottom: 1rem;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+
+        }
+        .item1{
+            background-color: #7C9E6E ;
+            top: 30px;
+            left:-300px;
+            h3{
+                color:white;
+            }
+        }
+        .item2{
+            top: 320px;
+            left:-280px;
+        }
+        .item3{
+            top:480px;
+            left:80px;
+        }
+        .item4{
+            top: 300px;
+            left: 400px;
+        }
+        .item5{
+            top: 30px;
+            left: 450px;
+        }
+    }
+}
+@media (max-width:975px) {
+    .ourService{
+        h2{
+            margin:10% 0;
+        }
+        .services{
+            .item{
+                margin: 5% 0;
+            }
+        }
+    }
+    .ourWorth{
+        padding-bottom: 2rem;
+        h2{
+            margin: 10% 0;
+        }
+        .worths{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .item{
+                position: static;
+                margin: 5% 0;
+            }
+            .center{
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
