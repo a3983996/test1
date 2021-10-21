@@ -447,6 +447,7 @@ header .top {
 }
 
 .homepage .commodities .list .commodity {
+  max-width: 200px;
   flex: 1 1 150px;
   display: flex;
   flex-direction: column;
@@ -457,10 +458,6 @@ header .top {
   width: 18%;
   background-color: white;
   box-shadow: 3px 7px 12px #0000004D;
-}
-
-.homepage .commodities .list .commodity img {
-  width: 100%;
 }
 
 .homepage .commodities .list .commodity p {
@@ -544,6 +541,9 @@ header .top {
   .homepage .commodities .list .commodity {
     width: 48%;
   }
+  .homepage .commodities .list .commodity img {
+    width: 100%;
+  }
 }
 
 .homepage .ourService {
@@ -601,9 +601,10 @@ header .top {
 .homepage .ourService .services .item button {
   background-color: #7C9E6E;
   color: white;
-  width: 35%;
+  width: 50%;
   font-size: 1.5rem;
   border: none;
+  white-space: nowrap;
 }
 
 .homepage .ourWorth {
@@ -705,8 +706,14 @@ header .top {
   .homepage .ourService h2 {
     margin: 10% 0;
   }
+  .homepage .ourService .services {
+    width: 50%;
+  }
   .homepage .ourService .services .item {
     margin: 5% 0;
+  }
+  .homepage .ourService .services .item button {
+    font-size: 1rem;
   }
   .homepage .ourWorth {
     padding-bottom: 2rem;
@@ -724,7 +731,7 @@ header .top {
     margin: 5% 0;
   }
   .homepage .ourWorth .worths .center img {
-    width: 300px;
+    width: 280px;
   }
 }
 
@@ -1012,6 +1019,18 @@ header .top {
 .aboutRenChen .consultant .container2 .container2_2 div p {
   font-weight: bold;
   margin: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .aboutRenChen .banner {
+    height: 50vh;
+  }
+  .aboutRenChen .banner h1 {
+    font-size: 2rem;
+  }
+  .aboutRenChen .consultant .container1 .container1_1 {
+    padding: 1rem;
+  }
 }
 
 footer {

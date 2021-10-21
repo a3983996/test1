@@ -44,9 +44,10 @@
             button{
                 background-color: #7C9E6E ;
                 color: white;
-                width: 35%;
+                width: 50%;
                 font-size: 1.5rem;
                 border:none;
+                white-space: nowrap;
             }
         }
 
@@ -142,8 +143,12 @@
             margin:10% 0;
         }
         .services{
+            width: 50%;
             .item{
                 margin: 5% 0;
+                button{
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -162,7 +167,7 @@
             }
             .center{
                 img{
-                    width: 300px;
+                    width: 280px;
                 }
             }
         }

@@ -87,3 +87,20 @@
         }
     }
 }
+@media (max-width:768px) {
+    .aboutRenChen{
+        .banner{
+            height: 50vh;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .consultant{
+            .container1{
+                .container1_1{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
